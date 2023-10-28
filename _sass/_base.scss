@@ -17,14 +17,19 @@ li,
 span,
 strong {
   color: var(--global-text-color);
+  font-family: 'Alegreya', serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
 
-table {
+
+table{
   td,
+
   th {
     font-size: 1rem;
   }
@@ -34,9 +39,25 @@ table {
   }
 }
 
+.no-spacing {
+  border-spacing:0; /* Removes the cell spacing via CSS */
+  border-collapse: collapse;  /* Optional - if you don't want to have double border where cells touch */
+  //padding-left: 10px;
+  td{
+    padding-bottom: 5px;
+  }
+
+  th{
+      padding-right: 50px;
+  }
+}
+
+
+
+
 a,
 table.table a {
-  color: var(--global-theme-color);
+  color: blue;//var(--global-theme-color);
 
   &:hover {
     color: var(--global-theme-color);
@@ -186,7 +207,7 @@ blockquote {
 
 @media (min-width: 576px) {
   .profile {
-    width: 30%;
+    width: 20%;
 
     .address {
       p {
@@ -654,12 +675,18 @@ footer.sticky-bottom {
   }
 
   ol.bibliography {
-    list-style: none;
+    list-style: before{ //none
+      
+      content: "[" counter(item) "]";
+      counter-increment: item;
+    };
     padding: 0;
     margin-top: 0;
 
+
     li {
       margin-bottom: 1rem;
+      counter-increment: bibitem -1;
 
       .preview {
         width: 100%;

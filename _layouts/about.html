@@ -3,14 +3,20 @@ layout: default
 ---
 
 <!-- about.html -->
+
+  
       <div class="post">
         <header class="post-header">
           <h1 class="post-title">
-            {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
+            {% if site.title == "blank" -%}{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.univ-guyane.fr/"><img src="assets/img/ug_logo-transparent.png" width="128"></a>
+            <a href="https://www.espace-dev.fr/portfolio-items/la-reunion-mayotte/?portfolioCats=13"><img src="assets/img/Logo-Espace-Dev-coul.png" width="128"></a>
           </h1>
-          <p class="desc">{{ page.subtitle }}</p>
+          <h6 class="desc">{{ page.subtitle }} </h6>&nbsp;
         </header>
-
+      
         <article>
           {% if page.profile -%}
           <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
@@ -41,24 +47,26 @@ layout: default
             {{ content }}
           </div>
 
+          <p>&nbsp;</p>
+
           <!-- News -->
           {% if page.news and site.announcements.enabled -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
+            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">News</a></h2>
             {%- include news.html limit=true %}
           {%- endif %}
 
           <!-- Latest posts -->
           {% if page.latest_posts -%}
-            <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h2>
+            <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">Latest posts</a></h2>
             {%- include latest_posts.html %}
           {%- endif %}
 
           <!-- Selected papers -->
           {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
+            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Selected publications</a></h2>
             {%- include selected_papers.html %}
           {%- endif %}
-
+          
           <!-- Social -->
           {%- if page.social %}
             <div class="social">
@@ -71,6 +79,22 @@ layout: default
               </div>
 
             </div>
+          {%- endif %}
+
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+
+          <!-- Contact -->
+          {%- if page.contact %}<h2>Contact</h2>
+          <style type="text/css">
+            p {margin-bottom: 0em;  margin-top: 0em;} 
+           </style>
+           
+            <p>University of French Guiana</p>
+            <p>2091 Route de Baduel</p>
+            <p>97331 Cayenne</p>
+            <a href="https://maps.app.goo.gl/4DF1agvezATereZt9">Google maps</a>
           {%- endif %}
         </article>
 
