@@ -5,7 +5,7 @@
 # Parse cmd arguments
 
 SRC_BRANCH="master"
-DEPLOY_BRANCH="master" #"gh-pages"
+DEPLOY_BRANCH="gh-pages"
 
 USAGE_MSG="usage: deploy [-h|--help] [-u|--user] [-s|--src SRC_BRANCH] [-d|--deploy DEPLOY_BRANCH] [--verbose] [--no-push]"
 
@@ -83,11 +83,11 @@ else
 fi
 
 # Checkout DEPLOY_BRANCH branch
-# if [ `git branch | grep $DEPLOY_BRANCH` ]
-# then
-#   git branch -D $DEPLOY_BRANCH
-# fi
-# git checkout -b $DEPLOY_BRANCH
+if [ `git branch | grep $DEPLOY_BRANCH` ]
+then
+  git branch -D $DEPLOY_BRANCH
+fi
+git checkout -b $DEPLOY_BRANCH
 
 # Export JEKYLL_ENV=production
 export JEKYLL_ENV=production
