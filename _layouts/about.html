@@ -7,14 +7,21 @@ layout: default
   
       <div class="post">
         <header class="post-header">
-          <h1 class="post-title">
-            {% if site.title == "blank" -%}{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://www.univ-guyane.fr/"><img src="assets/img/ug_logo-transparent.png" width="128"></a>
-            <a href="https://www.espace-dev.fr/portfolio-items/la-reunion-mayotte/?portfolioCats=13"><img src="assets/img/Logo-Espace-Dev-coul.png" width="128"></a>
-          </h1>
-          <h6 class="desc">{{ page.subtitle }} </h6>&nbsp;
+          <div class="news">
+            <table class="table table-sm table-borderless">
+            
+              <tr>
+                  <th><p><h1 class="post-title">{% if site.title == "blank" -%}{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}</h1></p>
+                    <p><h6 class="desc">{{ page.subtitle }} </h6></p>
+                  </th>
+                  <td align="right"> <a href="https://www.univ-guyane.fr/"><img src="assets/img/ug_logo-transparent.png" width="128"></a>
+                    <a href="https://www.espace-dev.fr/portfolio-items/la-reunion-mayotte/?portfolioCats=13"><img src="assets/img/Logo-Espace-Dev-coul.png" width="128"></a></td>
+              </tr>
+          
+              
+          </table>
+        </div>
+        &nbsp;
         </header>
       
         <article>
