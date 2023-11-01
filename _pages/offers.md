@@ -15,6 +15,7 @@ p {margin-bottom: 0em;  margin-top: 0em;}
 
 ### _Internships_
 [//]: # (<p><span class="badge danger-color-dark #000000 text-uppercase align-middle" style="min-width: 75px;">Internship</span><a href="/assets/pdf/Sujet_Stage_M2_Conso_2024.pdf"> PV production estimation - 2024 </a></p>)
+<p><a href="/assets/pdf/ML_M2_2024.pdf"> Machine learning model for annual predictive monitoring of airborne micro-organisms in French Guiana. - 2024 </a></p>
 <p><a href="/assets/pdf/Sujet_Stage_M2_Conso_2024.pdf"> PV production estimation - 2024 </a></p>
 <p><a href="/assets/pdf/Sujet_Stage_M2_ICU_2024.pdf"> Bayes for urban heat islands - 2024 </a></p>
 
