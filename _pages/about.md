@@ -19,7 +19,6 @@ contact: true
 I am an associate professor at [University of French Guiana](https://www.univ-guyane.fr/) and [UMR Espace-Dev](https://www.espace-dev.fr/) and I received a PhD degree in image processing from [University of Bordeaux](https://www.u-bordeaux.fr/en) ([IMS laboratory](https://www.ims-bordeaux.fr/)).
 
 <p>&nbsp;</p>
-<p>&nbsp;</p>
 
 #### Research interests
 Data valorisation, machine learning\\
