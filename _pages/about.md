@@ -22,6 +22,7 @@ I am an associate professor at [University of French Guiana](https://www.univ-gu
 <p>&nbsp;</p>
 
 #### Research interests
+Data valorisation, machine learning\\
 Image processing\\
 Irradiance estimation\\
 Remote sensing\\
