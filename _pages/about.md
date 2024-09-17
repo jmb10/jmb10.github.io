@@ -23,6 +23,6 @@ I am an associate professor at [University of French Guiana](https://www.univ-gu
 #### Research interests
 Data valorisation, machine learning\\
 Image processing\\
-Irradiance estimation\\
 Remote sensing\\
-Bayesian methods, MCMC
+Bayesian methods, MCMC\\
+Irradiance estimation
