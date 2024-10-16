@@ -12,4 +12,5 @@ nav_order: 7
 - System programming
 - Graph theory
 - Probability and statistics
+- Mathematics
 
