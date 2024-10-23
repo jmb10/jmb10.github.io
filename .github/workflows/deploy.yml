@@ -26,11 +26,13 @@ jobs:
       with:
         ruby-version: '3.2.2'
         bundler-cache: true
+    # https://github.com/alshedivat/al-folio/issues/2755
     - name: Setup Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.12'
         cache: 'pip' # caching pip dependencies
+    - run: pip install -r requirements.txt
     - name: Update _config.yml ⚙️
       uses: fjogeleit/yaml-update-action@v0.13.1
       with:
@@ -39,6 +41,7 @@ jobs:
         propertyPath: 'giscus.repo'
         value: ${{ github.repository }}
     - name: Install and Build 🔧
+    # https://github.com/alshedivat/al-folio/issues/2723
       run: |
         sudo apt-get update
         sudo apt-get install -y imagemagick
