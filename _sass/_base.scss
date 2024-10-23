@@ -37,6 +37,10 @@ table{
   th {
     font-weight: bold;
   }
+
+  th {
+    vertical-align: top;
+  }
 }
 
 .no-spacing {
@@ -774,7 +778,7 @@ footer.sticky-bottom {
           color: $black-color;
           height: 100%;
           padding-right: 0.5rem;
-          vertical-align: top;//middle;
+          vertical-align: middle;
 
           &:hover {
             text-decoration: underline;
