@@ -17,7 +17,7 @@ p {margin-bottom: 0em;  margin-top: 0em;}
 
 
 ### National projects
-<span class="badge font-weight-bold success-color text-uppercase align-middle">Coordinator</span> <span class="font-bold">MonSolAI</span> : MRSEI fund, 2023. <span class="font-italic">ANR</span>
+<span class="badge font-weight-bold success-color text-uppercase align-middle">Coordinator</span> <span class="font-bold">MonSolAI</span> : MRSEI fund, 2023 - 2025. <span class="font-italic">ANR</span>
 <details><summary>More information.</summary>Grant for consortium building and enhancing to apply to a European call with topic of machine learning in smart energy management.</details>
 
 ### Local/Regional projects
