@@ -22,7 +22,7 @@ I am an associate professor in Computer Science at [University of French Guiana]
 
 #### Research interests
 Image processing\\
-Data valorisation, machine learning\\
 Remote sensing\\
+Data valorisation, machine learning\\
 Bayesian methods, MCMC\\
 Irradiance estimation
