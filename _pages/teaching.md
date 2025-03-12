@@ -8,9 +8,10 @@ nav_order: 7
 ---
 
 - Algorithmic
+- Graph theory
+- Image processing
+- Mathematics
+- Probability and statistics
 - Programming
 - System programming
-- Graph theory
-- Probability and statistics
-- Mathematics
 
